@@ -130,6 +130,9 @@ def create_page(name, description, subject, materials, id, link, date=None):
 
 def check_in_db(db, id):
     for page in db:
+        # check if it has the id property
+        if 'id' in page['properties'].keys():
+            return False
         if page['properties']['id']['rich_text'][0]['plain_text'] == id:
             return True
     return False
