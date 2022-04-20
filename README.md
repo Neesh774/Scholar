@@ -10,9 +10,15 @@ Create a Google Cloud account with these two links:
 
 - https://developers.google.com/workspace/guides/create-project
 - https://developers.google.com/workspace/guides/create-credentials
-  Then, create a Notion integration here:
+
+Then, create a Notion integration here:
+
 - https://www.notion.so/my-integrations
   Make sure the integration has access to your database by inviting it with the share button in Notion
+
+After that, create a Twilio account here:
+
+- https://www.twilio.com/try-twilio
 
 ### Files
 
@@ -48,6 +54,10 @@ Create a Google Cloud account with these two links:
   "client_x509_cert_url": "",
   "notion": "notion integration secret",
   "database": "database id",
+  "twilio_sid": "twilio SID",
+  "twilio_auth": "twilio auth secret",
+  "twilio_number: "your twilio number",
+  "my_number": "your number"
 }
 ```
 

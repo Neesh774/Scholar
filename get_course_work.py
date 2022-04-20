@@ -24,7 +24,7 @@ def getMaterials(courseWork):
     return res
 
 
-def getCourseWork(creds):
+def get_course_work(creds):
     try:
         service = build('classroom', 'v1', credentials=creds)
         courses = []

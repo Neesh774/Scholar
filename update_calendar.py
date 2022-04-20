@@ -1,4 +1,5 @@
 from notion_client import Client
+import time
 import datetime
 import json
 
@@ -131,14 +132,14 @@ def create_page(name, description, subject, materials, id, link, date=None):
 def check_in_db(db, id):
     for page in db:
         # check if it has the id property
-        if 'id' not in page['properties'].keys():
+        if 'id' not in page['properties'].keys() or len(page['properties']['id']['rich_text']) == 0:
             continue
         if page['properties']['id']['rich_text'][0]['plain_text'] == id:
             return True
     return False
 
 
-def updateCalendar(assignments):
+def update_calendar(assignments):
     notion = Client(auth=keys['notion'])
 
     db = notion.databases.query(
@@ -147,9 +148,13 @@ def updateCalendar(assignments):
         }
     )['results']
 
-    for course_name in assignments.keys():
+    for i, course_name in enumerate(assignments.keys()):
         course_assignments = assignments[course_name]['assignments']
+        percent_complete = int(20 * ((i+1) / len(assignments)))
+        print('\r[' + ('\033[1;32m=\033[0;0m' * percent_complete) +
+              ('=' * (len(assignments) - percent_complete)) + '] ' + str(i + 1) + '/' + str(len(assignments)) + ' Courses | ' + course_name, end=' ' * 40, flush=True)
         if len(course_assignments) == 0:
+            time.sleep(0.2)
             continue
         for i in range(len(course_assignments)):
             assignment = course_assignments[i]
@@ -173,4 +178,6 @@ def updateCalendar(assignments):
 
 if __name__ == "__main__":
     assignments = json.load(open('courseWork.json', 'r'))
-    updateCalendar(assignments)
+    update_calendar(assignments)
+    print(
+        '\rCompleted\033[1;32m Update Calendar\033[0;0m' + (" " * 40), end="\n")
