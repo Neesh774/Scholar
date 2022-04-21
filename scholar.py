@@ -8,9 +8,9 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 
-from getCourseWork import getCourseWork
-from updateCalendar import updateCalendar
-
+from get_course_work import get_course_work
+from update_calendar import update_calendar
+from send_message import send_message
 
 SCOPES = ["https://www.googleapis.com/auth/classroom.courses.readonly", "https://www.googleapis.com/auth/classroom.coursework.me",
           "https://www.googleapis.com/auth/classroom.student-submissions.me.readonly", "https://www.googleapis.com/auth/classroom.courses"]
@@ -39,14 +39,16 @@ def main():
     creds = getCreds()
     print(('-' * 30))
     print('Starting\033[1;36m Scholar\033[0;0m')
-    print(('-' * 30) + '\n')
-    assignments = getCourseWork(creds)
-    print('\n\n' + ('-' * 30) + (' ' * 40))
-    print('Completed\033[1;32m Get Course Work\033[0;0m')
-    updateCalendar(assignments)
+    print('-' * 30)
+    assignments = get_course_work(creds)
+    print('\rCompleted\033[1;32m Get Course Work\033[0;0m' + (' ' * 30))
     print(('-' * 30))
-    print('Completed\033[1;32m Update Calendar\033[0;0m')
+    update_calendar(assignments)
+    print(
+        '\rCompleted\033[1;32m Update Calendar\033[0;0m' + (" " * 40), end="\n")
     print(('-' * 30))
+    send_message()
+    print('\033[1;36mScholar\033[0;0m Complete')
 
 
 if __name__ == "__main__":
