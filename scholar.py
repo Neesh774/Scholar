@@ -11,6 +11,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from get_course_work import get_course_work
 from update_calendar import update_calendar
 from send_message import send_message
+from update_home import update_home
 
 
 SCOPES = ["https://www.googleapis.com/auth/classroom.courses.readonly", "https://www.googleapis.com/auth/classroom.coursework.me",
@@ -49,6 +50,7 @@ def main():
         '\rCompleted\033[1;32m Update Calendar\033[0;0m' + (" " * 40), end="\n")
     print(('-' * 30))
     send_message()
+    update_home()
     print('\033[1;36mScholar\033[0;0m Complete')
 
 

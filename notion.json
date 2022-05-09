@@ -1,0 +1,51 @@
+{
+  "cover": {
+    "light": "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "dark": "https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"
+  },
+  "title": "cd985df75ea247059bdba5446885b412",
+  "images": [
+    {
+      "id": "f75031e5a1974c4b9efa2eaebc8868f3",
+      "light": "https://images.unsplash.com/photo-1585521549926-ca6526bda09e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "dark": "https://images.unsplash.com/photo-1513112300738-bbb13af7028e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": "f9e4505d9c4042878b6ba8e431ff0bd3",
+      "light": "https://images.unsplash.com/photo-1564510714747-69c3bc1fab41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=1176&q=80&w=5048",
+      "dark": "https://images.unsplash.com/photo-1492446190781-58ac4285911d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=1176&q=80&w=5048"
+    },
+    {
+      "id": "6e01c37404fb46bdbe5253c39ef6a141",
+      "light": "https://images.unsplash.com/photo-1540526404748-98a4bf890e6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=5994&q=80&h=1560",
+      "dark": "https://images.unsplash.com/photo-1435224668334-0f82ec57b605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=5994&q=80&h=1560"
+    },
+    {
+      "id": "389ec03250ff4452b94cf6e01a7abfe0",
+      "light": "https://images.unsplash.com/photo-1593088177922-aa1c5055c7b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2219&h=1185&q=80",
+      "dark": "https://images.unsplash.com/photo-1516410290616-fb59b7994a51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2219&h=1185&q=80"
+    }
+  ],
+  "heading_1": [
+    {
+      "id": "fb3c67ec671d46eba6d5a2694ef40755",
+      "content": "Rᴇsᴏᴜʀᴄᴇs 🧰"
+    },
+    {
+      "id": "36e939533660456db4d7eaaf0eaf2f4c",
+      "content": "Tᴏ Dᴏ ⚙️"
+    },
+    {
+      "id": "ae36c81325bb42e291799bbaf198d531",
+      "content": "Yᴇᴀʀ Nᴏᴛᴇs 🗒️"
+    },
+    {
+      "id": "501765272c744030920b571aa73de375",
+      "content": "Sᴜᴍᴍᴇʀ Nᴏᴛᴇs 🌴"
+    }
+  ],
+  "heading_2": [
+    { "id": "2930c8e1f17243789822d8b1b1b41200", "content": "Semester 1 💯" },
+    { "id": "9335f6e1e65547289f606b612e2b32f3", "content": "Rᴇᴍɪɴᴅᴇʀs ❗" }
+  ]
+}
