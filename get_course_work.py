@@ -4,7 +4,7 @@ import datetime
 import dateutil.parser
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
-import json
+import json 
 
 # If modifying these scopes, delete the file token.json.
 SCOPES = ["https://www.googleapis.com/auth/classroom.courses.readonly", "https://www.googleapis.com/auth/classroom.courses",
@@ -70,6 +70,12 @@ def get_course_work(creds):
                     if new_due < datetime.date.today():
                         continue
                     new_work['due'] = new_due.isoformat()
+                else:
+                    year = work['creationTime'].split('-')[0]
+                    month = work['creationTime'].split('-')[1]
+                    day = work['creationTime'].split('-')[2].split('T')[0]
+                    new_work['due'] = datetime.date(int(year), int(month), int(day)).isoformat()
+                    
                 new_work['link'] = work['alternateLink']
                 new_work['materials'] = getMaterials(work)
                 new_work['id'] = work['id']

@@ -79,8 +79,8 @@ def send():
 
 
 def send_message():
-    time = datetime.time
-    if time.hour == 14 and time.minute == 5:
+    time = datetime.datetime.now()
+    if time.hour == 14 and time.minute < 10 and time.minute > 1:
         print("Sending message...")
         message = send()
         print("Message Status", message.status)
