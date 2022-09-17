@@ -1,6 +1,6 @@
 # Scholar
 
-An app that scans your Google Classroom assignments and puts them into a Notion Calendar.
+An app that scans your Google Classroom assignments and puts them into a Notion Calendar, along with sending you notifications every day with all the work you need to do
 
 ## Usage
 
