@@ -54,13 +54,6 @@ After that, create a Twilio account here:
   "client_x509_cert_url": "",
   "notion": "notion integration secret",
   "database": "database id",
-<<<<<<< HEAD
-=======
-  "twilio_sid": "twilio SID",
-  "twilio_auth": "twilio auth secret",
-  "twilio_number: "your twilio number",
-  "my_number": "your number"
->>>>>>> 457d7a5b95ae3662e4dab7a2f7d617c7f0239ae0
 }
 ```
 
