@@ -4,3 +4,7 @@ keys.json
 token.json
 __pycache__
 .DS_Store
+pyvenv.cfg
+bin
+lib
+include
